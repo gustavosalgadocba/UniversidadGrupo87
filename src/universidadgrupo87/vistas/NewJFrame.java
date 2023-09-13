@@ -35,17 +35,17 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(560, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(68, 68, 68)
                 .addComponent(jButton1)
-                .addGap(229, 229, 229))
+                .addContainerGap(721, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(278, 278, 278)
+                .addGap(118, 118, 118)
                 .addComponent(jButton1)
-                .addContainerGap(454, Short.MAX_VALUE))
+                .addContainerGap(614, Short.MAX_VALUE))
         );
 
         pack();
