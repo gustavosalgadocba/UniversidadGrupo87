@@ -5,6 +5,9 @@
  */
 package universidadgrupo87;
 
+import java.sql.*;
+import universidadgrupo87.accesoADatos.Conexion;
+
 /**
  *
  * @author Agustin Colongne
@@ -16,6 +19,8 @@ public class UniversidadGrupo87 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Connection con = Conexion.getConexion();
     }
     
 }
