@@ -148,7 +148,7 @@ public class AlumnoData {
                 alumno.setFechaNacimiento(rs.getDate("fechaNacimiento").toLocalDate());
                 alumno.setActivo(true);
             } else {
-                JOptionPane.showMessageDialog(null, "no existe el alumno");
+                JOptionPane.showMessageDialog(null, "No existe el alumno");
             }
             ps.close();
 

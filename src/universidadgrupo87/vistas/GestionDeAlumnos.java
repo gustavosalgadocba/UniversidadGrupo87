@@ -5,6 +5,9 @@
  */
 package universidadgrupo87.vistas;
 
+import universidadgrupo87.accesoADatos.AlumnoData;
+import universidadgrupo87.entidades.Alumno;
+
 /**
  *
  * @author FamiliaSic
@@ -63,6 +66,11 @@ public class GestionDeAlumnos extends javax.swing.JInternalFrame {
         jLabel6.setText("Fecha de nacimiento:");
 
         jBbuscar.setText("Buscar");
+        jBbuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBbuscarActionPerformed(evt);
+            }
+        });
 
         jBnuevo.setText("Nuevo");
 
@@ -161,6 +169,21 @@ public class GestionDeAlumnos extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_jBsalirActionPerformed
+
+    private void jBbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBbuscarActionPerformed
+        // TODO add your handling code here:
+        AlumnoData alum = new AlumnoData();
+        
+        int dniBuscado = Integer.parseInt(jTdocumento.getText());
+        Alumno alumno = alum.buscarAlumnoPorDni(dniBuscado);
+        
+        jTapellido.setText(alumno.getApellido());
+        jTnombre.setText(alumno.getNombre());
+        
+        
+        
+        
+    }//GEN-LAST:event_jBbuscarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
